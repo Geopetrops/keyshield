@@ -1,0 +1,41 @@
+.social-media-container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  left: 10px;
+}
+
+.social-media-container a i {
+  font-size: 30px;
+  padding: 20px;
+  color: purple;
+  transition: all .3s ease;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.social-media-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+
+.social-media-container a i:hover {
+  transform: scale(1);
+  color: pink;
+}
+
+.creator-socials {
+  margin-left: 400px;
+}
+
+.creator-socials span {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
+}

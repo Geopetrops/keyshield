@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <title>Caesar Cipher Decryption</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="headers-sidebar-style.css">
+    <link rel="stylesheet" href="encrypt-decrypt-section.css">
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <header>
+        <div class="left-section">
+            <label for="check" class="open-sidebar-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="text">
+            <span>Mpourdas</span> Menu
+            <label for="check" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e3e3e3">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+        </div>
+        <div class="menu">
+            <div class="menu-section"><a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>Home</a>
+            </div>
+
+            <div class="menu-section"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e3e3e3">
+                        <path
+                            d="M400-240v-80h62l105-120-105-120h-66l-64 344q-8 45-37 70.5T221-120q-45 0-73-24t-28-64q0-32 17-51.5t43-19.5q25 0 42.5 17t17.5 41q0 5-.5 9t-1.5 9q5-1 8.5-5.5T252-221l62-339H200v-80h129l21-114q7-38 37.5-62t72.5-24q44 0 72 26t28 65q0 30-17 49.5T500-680q-25 0-42.5-17T440-739q0-5 .5-9t1.5-9q-6 2-9 6t-5 12l-17 99h189v80h-32l52 59 52-59h-32v-80h200v80h-62L673-440l105 120h62v80H640v-80h32l-52-60-52 60h32v80H400Z" />
+                    </svg>CeasarCipher<i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu-AES">
+                    <li><a href="encryptionCipher.html">Encryption(Cipher)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="encryption-container">
+        <h2>Caesar Cipher Decryption</h2>
+        <div class="input-content">
+            <input type="text" id="caesarEncryptedText" required>
+            <span>Encrypted Text</span>
+        </div>
+        <div class="input-content">
+            <input type="text" id="caesarDecryptKey" maxlength="2" required>
+            <span class="key-input">Key (1-25)</span>
+        </div>
+        <button onclick="decryptCaesarText()">Decrypt</button>
+        <h3>Decrypted Text:</h3>
+        <div class="copy-button-container">
+            <p id="decryptedCaesarOutput"></p>
+        </div>
+    </div>
+
+    <script src="decryptionCipher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home</title>
+  <link rel="stylesheet" href="headers-sidebar-style.css">
+  <link rel="stylesheet" href="info-box.css">
+  <link rel="stylesheet" href="user-GUI.css">
+  <link rel="stylesheet" href="social-media-buttons.css">
+</head>
+
+<body>
+
+  <div class="logo-website">
+    <div>
+      <a href="home.html"><i class="fa-solid fa-key"></i></a>
+    </div>
+    <div>
+      <p><span>Key</span>Shield</p>
+    </div>
+  </div>
+
+  <input type="checkbox" id="check">
+
+  <div class="sidebar">
+    <div class="text">
+      <span>Menu</span>
+      <label for="check" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+    </div>
+    <div class="menu">
+      <div class="menu-section"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#e3e3e3">
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+          </svg>Home</a>
+      </div>
+      <div class="menu-section"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#e3e3e3">
+            <path
+              d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg>AES<i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu-AES">
+          <li><a href="encryption.html">Encryption(AES)</a></li>
+          <li><a href="decryption.html">Decryption(AES)</a></li>
+        </ul>
+      </div>
+      <div class="menu-section"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#e3e3e3">
+            <path
+              d="M400-240v-80h62l105-120-105-120h-66l-64 344q-8 45-37 70.5T221-120q-45 0-73-24t-28-64q0-32 17-51.5t43-19.5q25 0 42.5 17t17.5 41q0 5-.5 9t-1.5 9q5-1 8.5-5.5T252-221l62-339H200v-80h129l21-114q7-38 37.5-62t72.5-24q44 0 72 26t28 65q0 30-17 49.5T500-680q-25 0-42.5-17T440-739q0-5 .5-9t1.5-9q-6 2-9 6t-5 12l-17 99h189v80h-32l52 59 52-59h-32v-80h200v80h-62L673-440l105 120h62v80H640v-80h32l-52-60-52 60h32v80H400Z" />
+          </svg>CaeserCipher<i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu-AES">
+          <li><a href="encryptionCipher.html">Encryption(Cipher)</a></li>
+          <li><a href="decryptionCipher.html">Decryption(Cipher)</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-section user-section">
+        <label for="input-container-check-open">
+          <a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+            </svg>User</a>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box-grid">
+    <div class="info-box-container">
+      <div class="info-preview">
+        <h4 class="title">
+          AES Encryption and Decryption
+        </h4>
+        <p>
+          This tool allows you to securely encrypt and decrypt messages using AES (Advanced Encryption Standard).
+        </p>
+        <p>
+          Click on "Encryption" to encrypt a message, or "Decryption" to decode an encrypted message.
+        </p>
+      </div>
+      <div class="info-preview2">
+        <h4 class="title2">
+          RSA Encryption and Decryption
+        </h4>
+        <p>
+          This tool allows you to securely encrypt and decrypt messages using RSA (Rivest-Shamir-Adleman).
+        </p>
+        <p>
+          Click on "Encryption" to encrypt a message using the public key, or "Decryption" to decode an encrypted
+          message
+          with the private key.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <div class="left-section">
+      <label for="check" class="open-sidebar-button">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+    <div class="middle-section-text">
+      <p>
+        <span>NavBar</span>
+      </p>
+    </div>
+    <div class="right-section">
+      <label for="input-container-check-open">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path
+            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+        </svg>
+      </label>
+    </div>
+  </header>
+
+  <!--
+  <div class="social-media-container">
+    <a href="https://www.instagram.com/mpourdas_community?igsh=MW15YWtrNjMyMnpsYg==" target="_blank">Community
+      Socials:<i class="fa-brands fa-instagram"></i> Mpourdas Community
+    </a>
+    <div class="creator-socials">
+      <span>Creators Socials:</span>
+      <a href="https://www.instagram.com/1dontletyouknow/profilecard/?igsh=MTRoOHY2Nmh5ZDd2NQ==" target="_blank"><i
+          class="fa-brands fa-instagram"></i>idontletyouknow
+        <a href="https://www.instagram.com/giorgosp_45?igsh=MTdpM253Y3k5YnpyMw==" target="_blank"><i
+            class="fa-brands fa-instagram"></i>Geopetrops
+        </a>
+    </div>
+  </div>-->
+
+  <input type="checkbox" id="input-container-check-open">
+  <div class="user-inputs-container">
+    <label for="input-container-check-open">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </label>
+    <p>
+      Join <span>Mpourdas</span> Community
+    </p>
+    <hr>
+    <div class="input-container">
+      <div class="input-info">
+        <div class="input-data">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" required>
+          <span>Username</span>
+        </div>
+        <div class="input-info">
+          <div class="input-data">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" required>
+            <span>Email</span>
+          </div>
+          <div class="input-info">
+            <div class="input-data">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" required>
+              <span>Password</span>
+            </div>
+          </div>
+        </div>
+        <button class="join-team-button">
+          Join Community
+        </button>
+      </div>
+</body>
+
+</html>

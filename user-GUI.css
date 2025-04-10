@@ -1,0 +1,164 @@
+.user-inputs-container {
+  background-color: rgb(31, 31, 31);
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 200px;
+  z-index: 1;
+  transition: all .9s;
+  display: none;
+}
+
+.user-inputs-container p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.user-inputs-container p span {
+  color: aqua;
+}
+
+hr {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+
+/*inputs in input-container*/
+
+
+.input-info {
+  width: 300px;
+  padding: 30px 30px 10px 30px;
+  background-color: rgb(31, 31, 31);
+  box-shadow: 0 0 10px (0, 0, 0, 0.23);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-data {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.input-data input {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: rgb(31, 31, 31);
+  border-bottom: 1px solid silver;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
+
+.input-data span {
+  position: absolute;
+  bottom: 12px;
+  color: white;
+  pointer-events: none;
+  transition: all .3s ease;
+  margin-left: -100px;
+  width: 100px;
+}
+
+.input-info input:focus {
+  border-bottom: 2px solid aqua;
+}
+
+.input-info input:focus~span,
+.input-info input:valid~span {
+  transform: translateY(-20px);
+  font-size: 18px;
+  color: aqua;
+}
+
+/*Button in input container*/
+.join-team-button {
+  background-color: rgb(49, 49, 49);
+  color: aqua;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px 10px 50px;
+  width: 300px;
+  cursor: pointer;
+  transition: opacity 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.join-team-button:hover {
+  opacity: 0.6;
+}
+
+.join-team-button:active {
+  background-color: aqua;
+  color: rgb(49, 49, 49);
+}
+
+/*Inputs icons-exit button*/
+
+.user-inputs-container i {
+  font-size: 20px;
+  padding-right: 10px;
+  color: aqua;
+  transform: translateY(20%);
+  transition: all .3s ease;
+}
+
+.user-inputs-container i:hover {
+  color: white;
+}
+
+.user-inputs-container label i {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#input-container-check-open:checked~.user-inputs-container {
+  display: flex;
+}
+
+#input-container-check-open {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+  .user-inputs-container {
+    width: 450px;
+    top: 150px;
+  }
+
+  .user-inputs-container p {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 300px;
+  }
+
+  .user-inputs-container label i {
+    right: 0;
+    top: 20px;
+  }
+}

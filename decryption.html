@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+  <title>
+    Decryption
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="headers-sidebar-style.css">
+  <link rel="stylesheet" href="encrypt-decrypt-section.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+
+  <div class="logo-website">
+    <a href="home.html"><i class="fa-solid fa-key"></i></a>
+    <p><span>Mpourda</span>Shield</p>
+  </div>
+
+
+  <input type="checkbox" id="check">
+  <header>
+    <div class="left-section">
+      <label for="check" class="open-sidebar-button">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+  </header>
+
+
+  <div class="sidebar">
+    <div class="text">
+      <span>Menu</span>
+      <label for="check" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+    </div>
+    <div class="menu">
+      <div class="menu-section"><a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+          </svg>Home</a>
+      </div>
+
+      <div class="menu-section"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#e3e3e3">
+            <path
+              d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg>AES<i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu-AES">
+          <li><a href="encryption.html">Encryption(AES)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="encryption-container">
+    <h2>Decryption</h2>
+    <div class="input-content">
+      <input type="text" id="mpourdasinput" required>
+      <span>Encrypted Text</span>
+    </div>
+    <div class="input-content">
+      <input type="text" id="mpourdasdecrypt" maxlength="16" required oninput="validateKey(this, 'mpourdascounter')">
+      <span class="key-input">Key</span>
+      <p class="counter" id="mpourdascounter">0/16</p>
+    </div>
+    <button onclick="decryptText()" class="encrypt-button">Decrypt</button>
+    <h3>Decrypted Text:</h3>
+    <div class="copy-button-container">
+      <p id="decryptedOutput"></p>
+    </div>
+  </div>
+
+
+  <script src="decryption.js"></script>
+</body>
+
+</html>
